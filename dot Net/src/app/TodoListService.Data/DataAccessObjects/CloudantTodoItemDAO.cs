@@ -13,7 +13,7 @@ namespace TodoListService.Data.DataAccessObjects
     {
         public IList<TodoItemDE> GetAllTodos()
         {
-            var client = new CouchClient(
+            throw new NotImplementedException();
         }
     }
 }

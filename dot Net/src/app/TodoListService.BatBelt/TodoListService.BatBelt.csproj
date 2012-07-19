@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{29FDBB16-22A4-4493-869A-B860D2CCC5CB}</ProjectGuid>
+    <ProjectGuid>{1C3ACF38-2662-47DE-BF1C-78B12134F889}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TodoListService.Data.Common</RootNamespace>
-    <AssemblyName>TodoListService.Data</AssemblyName>
+    <RootNamespace>TodoListService.BatBelt</RootNamespace>
+    <AssemblyName>TodoListService.BatBelt</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,21 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac">
-      <HintPath>..\..\..\lib\DreamSeat.1.2.0.0\lib\net40\Autofac.dll</HintPath>
-    </Reference>
-    <Reference Include="DreamSeat">
-      <HintPath>..\..\..\lib\DreamSeat.1.2.0.0\lib\net40\DreamSeat.dll</HintPath>
-    </Reference>
-    <Reference Include="log4net">
-      <HintPath>..\..\..\lib\DreamSeat.1.2.0.0\lib\net40\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="mindtouch.dream">
-      <HintPath>..\..\..\lib\DreamSeat.1.2.0.0\lib\net40\mindtouch.dream.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\lib\Newtonsoft.Json.4.5.7\lib\net40\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -54,15 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAOFactory.cs" />
-    <Compile Include="DataAccessObjects\CloudantTodoItemDAO.cs" />
-    <Compile Include="DataEntities\TodoCategoryDE.cs" />
-    <Compile Include="DataEntities\TodoItemDE.cs" />
-    <Compile Include="Interfaces\ITodoItemDAO.cs" />
+    <Compile Include="IDataAccessConfigInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
